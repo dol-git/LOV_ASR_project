@@ -1,0 +1,5 @@
+tree,plant_auto,plant_einsi,plant_ginsi,plant_linsi
+plant_auto,0.0,0.173913,0.198758,0.204969
+plant_einsi,0.173913,0.0,0.124224,0.161491
+plant_ginsi,0.198758,0.124224,0.0,0.136646
+plant_linsi,0.204969,0.161491,0.136646,0.0

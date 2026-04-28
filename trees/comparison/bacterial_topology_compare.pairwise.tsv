@@ -1,0 +1,7 @@
+tree1	tree2	n_leaves	splits_tree1	splits_tree2	shared_splits	rf_distance	max_rf	normalized_rf	shared_fraction
+bacterial_auto	bacterial_einsi	260	257	257	202	110	514	0.214008	0.647436
+bacterial_auto	bacterial_ginsi	260	257	257	190	134	514	0.2607	0.58642
+bacterial_auto	bacterial_linsi	260	257	257	199	116	514	0.225681	0.631746
+bacterial_einsi	bacterial_ginsi	260	257	257	198	118	514	0.229572	0.626582
+bacterial_einsi	bacterial_linsi	260	257	257	196	122	514	0.237354	0.616352
+bacterial_ginsi	bacterial_linsi	260	257	257	207	100	514	0.194553	0.674267

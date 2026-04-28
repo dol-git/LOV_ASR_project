@@ -1,0 +1,5 @@
+seq	mean_identity	min_identity	max_identity	n_compared
+bacterial_auto_STAS_Node201	77.66	69.92	81.57	3
+bacterial_einsi_STAS_Node195	81.54	76.86	86.27	3
+bacterial_ginsi_STAS_Node227	82.38	79.3	86.27	3
+bacterial_linsi_STAS_Node176	75.36	69.92	79.3	3

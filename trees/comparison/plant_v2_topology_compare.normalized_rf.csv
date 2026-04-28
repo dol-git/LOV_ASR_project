@@ -1,0 +1,5 @@
+tree,plant_auto_v2,plant_einsi_v2,plant_ginsi_v2,plant_linsi_v2
+plant_auto_v2,0.0,0.1875,0.125,0.175
+plant_einsi_v2,0.1875,0.0,0.18125,0.18125
+plant_ginsi_v2,0.125,0.18125,0.0,0.1
+plant_linsi_v2,0.175,0.18125,0.1,0.0

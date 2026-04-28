@@ -1,0 +1,11 @@
+source	node_id	label	description
+bacterial_linsi	Node234	LOV_STAS	bacterial LOV-STAS ancestor
+bacterial_linsi	Node199	LOV_HK	bacterial LOV-HK ancestor
+bacterial_linsi	Node5	LOV_HTH	bacterial LOV-HTH ancestor
+bacterial_linsi	Node2	Deep_ancestral	deep bacterial ancestor
+bacterial_einsi	Node234	LOV_STAS	bacterial LOV-STAS ancestor
+bacterial_einsi	Node199	LOV_HK	bacterial LOV-HK ancestor
+bacterial_einsi	Node5	LOV_HTH	bacterial LOV-HTH ancestor
+bacterial_einsi	Node2	Deep_ancestral	deep bacterial ancestor
+plant_linsi	Node3	Phototropin	phototropin ancestor
+plant_einsi	Node3	Phototropin	phototropin ancestor

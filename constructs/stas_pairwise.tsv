@@ -1,0 +1,7 @@
+seq1	seq2	identity_percent	compared_positions	matches	gap_positions	coverage_seq1_percent	coverage_seq2_percent	len_seq1	len_seq2
+bacterial_auto_STAS_Node201	bacterial_einsi_STAS_Node195	81.5	254	207	3	99.22	99.61	256	255
+bacterial_auto_STAS_Node201	bacterial_ginsi_STAS_Node227	81.57	255	208	3	99.61	99.22	256	257
+bacterial_auto_STAS_Node201	bacterial_linsi_STAS_Node176	69.92	256	179	1	100.0	99.61	256	257
+bacterial_einsi_STAS_Node195	bacterial_ginsi_STAS_Node227	86.27	255	220	2	100.0	99.22	255	257
+bacterial_einsi_STAS_Node195	bacterial_linsi_STAS_Node176	76.86	255	196	2	100.0	99.22	255	257
+bacterial_ginsi_STAS_Node227	bacterial_linsi_STAS_Node176	79.3	256	203	2	99.61	99.61	257	257

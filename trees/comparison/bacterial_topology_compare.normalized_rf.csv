@@ -1,0 +1,5 @@
+tree,bacterial_auto,bacterial_einsi,bacterial_ginsi,bacterial_linsi
+bacterial_auto,0.0,0.214008,0.2607,0.225681
+bacterial_einsi,0.214008,0.0,0.229572,0.237354
+bacterial_ginsi,0.2607,0.229572,0.0,0.194553
+bacterial_linsi,0.225681,0.237354,0.194553,0.0

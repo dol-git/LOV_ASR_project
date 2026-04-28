@@ -1,0 +1,7 @@
+tree1	tree2	n_leaves	splits_tree1	splits_tree2	shared_splits	rf_distance	max_rf	normalized_rf	shared_fraction
+plant_auto_v2	plant_einsi_v2	163	160	160	130	60	320	0.1875	0.684211
+plant_auto_v2	plant_ginsi_v2	163	160	160	140	40	320	0.125	0.777778
+plant_auto_v2	plant_linsi_v2	163	160	160	132	56	320	0.175	0.702128
+plant_einsi_v2	plant_ginsi_v2	163	160	160	131	58	320	0.18125	0.693122
+plant_einsi_v2	plant_linsi_v2	163	160	160	131	58	320	0.18125	0.693122
+plant_ginsi_v2	plant_linsi_v2	163	160	160	144	32	320	0.1	0.818182

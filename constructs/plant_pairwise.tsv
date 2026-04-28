@@ -1,0 +1,7 @@
+seq1	seq2	identity_percent	compared_positions	matches	gap_positions	coverage_seq1_percent	coverage_seq2_percent	len_seq1	len_seq2
+plant_auto_Node63	plant_einsi_Node80	85.6	861	737	55	97.73	96.09	881	896
+plant_auto_Node63	plant_ginsi_Node62	96.35	877	845	14	99.55	98.87	881	887
+plant_auto_Node63	plant_linsi_Node62	96.81	877	849	10	99.55	99.32	881	883
+plant_einsi_Node80	plant_ginsi_Node62	84.31	867	731	49	96.76	97.75	896	887
+plant_einsi_Node80	plant_linsi_Node62	84.72	864	732	51	96.43	97.85	896	883
+plant_ginsi_Node62	plant_linsi_Node62	99.32	883	877	4	99.55	100.0	887	883

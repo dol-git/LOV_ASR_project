@@ -1,0 +1,5 @@
+seq	mean_identity	min_identity	max_identity	n_compared
+plant_auto_Node63	92.92	85.6	96.81	3
+plant_einsi_Node80	84.88	84.31	85.6	3
+plant_ginsi_Node62	93.33	84.31	99.32	3
+plant_linsi_Node62	93.62	84.72	99.32	3
