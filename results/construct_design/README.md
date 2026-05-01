@@ -12,7 +12,7 @@ The purpose of this step was to define experimentally testable protein construct
 
 Three LOV-domain architecture classes were considered:
 
-1. Plant-like LOV2 / AsLOV2
+1. Phototropin-like LOV2 / AsLOV2
 2. LOV-STAS / YtvA
 3. LOV-HTH / EL222
 
@@ -23,7 +23,7 @@ For each class, a wild-type reference construct and an ancestral construct were 
 | Construct name | Reference boundary | Length | Description |
 |---|---:|---:|---|
 | `WT_AsLOV2_404_560` | AsLOV2 404-560 | 157 aa | Wild-type LOV2 core plus J-alpha-containing C-terminal region |
-| `AncPlant_Node62_AsLOV2_404_560eq` | AsLOV2 404-560 equivalent | 157 aa | Plant-like ancestral LOV2 construct with J-alpha-containing C-terminal region |
+| `AncPlant_Node62_AsLOV2_404_560eq` | AsLOV2 404-560 equivalent | 157 aa | Phototropin-like ancestral LOV2 construct with J-alpha-containing C-terminal region |
 | `WT_YtvA_20_147` | YtvA 20-147 | 128 aa | Wild-type LOV core plus LOV-STAS linker / J-alpha-like segment |
 | `AncSTAS_Node227_YtvA_20_147eq` | YtvA 20-147 equivalent | 128 aa | Ancestral LOV-STAS construct with LOV-STAS linker / J-alpha-like segment |
 | `WT_EL222_1_163` | EL222 1-163 | 163 aa | Wild-type LOV domain plus connector J-alpha-helix |
@@ -31,7 +31,7 @@ For each class, a wild-type reference construct and an ancestral construct were 
 
 ## Design rationale
 
-### Plant-like LOV2 / AsLOV2
+### Phototropin-like LOV2 / AsLOV2
 
 The AsLOV2 construct was defined using residues 404-560.
 

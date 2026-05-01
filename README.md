@@ -130,7 +130,7 @@ Note: exact initial BLAST hit counts and post-filtering counts should be recorde
 
 | Category | Description | Final construct selected |
 |---|---|---|
-| Phototropin-like LOV | Plant-like LOV proteins related to phototropin LOV2 systems | Yes |
+| Phototropin-like LOV | Phototropin-like LOV proteins related to phototropin LOV2 systems | Yes |
 | LOV-STAS | YtvA-like proteins containing LOV and STAS modules | Yes |
 | LOV-HTH | EL222-like proteins containing LOV and HTH DNA-binding modules | Yes |
 
@@ -223,7 +223,7 @@ The working construct-design files are stored in:
 
 ## Construct Boundary Rationale
 
-### AsLOV2 / plant-like LOV2
+### AsLOV2 / phototropin-like LOV2
 
 The wild-type AsLOV2 construct was defined as residues 404-560.
 
@@ -294,7 +294,7 @@ Further structure-prediction inputs for the final construct set will be prepared
 
 The project has selected three ancestral LOV-domain candidates and their corresponding wild-type reference constructs:
 
-- AsLOV2-like plant LOV2 candidate
+- AsLOV2-like phototropin LOV2 candidate
 - YtvA-like LOV-STAS candidate
 - EL222-like LOV-HTH candidate
 
