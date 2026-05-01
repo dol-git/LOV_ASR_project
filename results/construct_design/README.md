@@ -22,12 +22,12 @@ For each class, a wild-type reference construct and an ancestral construct were 
 
 | Construct name | Reference boundary | Length | Description |
 |---|---:|---:|---|
-| `WT_AsLOV2_404_560` | AsLOV2 404-560 | 157 aa | Wild-type LOV2 core plus Jalpha-containing C-terminal region |
-| `AncPlant_Node62_AsLOV2_404_560eq` | AsLOV2 404-560 equivalent | 157 aa | Plant-like ancestral LOV2 construct with Jalpha-containing C-terminal region |
-| `WT_YtvA_20_147` | YtvA 20-147 | 128 aa | Wild-type LOV core plus LOV-STAS linker / Jalpha-like segment |
-| `AncSTAS_Node227_YtvA_20_147eq` | YtvA 20-147 equivalent | 128 aa | Ancestral LOV-STAS construct with LOV-STAS linker / Jalpha-like segment |
-| `WT_EL222_1_163` | EL222 1-163 | 163 aa | Wild-type LOV domain plus connector Jalpha-helix |
-| `AncHTH_Node83_EL222_1_170eq` | EL222 1-170 equivalent | 148 aa | Ancestral LOV-HTH construct with Jalpha-like connector segment |
+| `WT_AsLOV2_404_560` | AsLOV2 404-560 | 157 aa | Wild-type LOV2 core plus J-alpha-containing C-terminal region |
+| `AncPlant_Node62_AsLOV2_404_560eq` | AsLOV2 404-560 equivalent | 157 aa | Plant-like ancestral LOV2 construct with J-alpha-containing C-terminal region |
+| `WT_YtvA_20_147` | YtvA 20-147 | 128 aa | Wild-type LOV core plus LOV-STAS linker / J-alpha-like segment |
+| `AncSTAS_Node227_YtvA_20_147eq` | YtvA 20-147 equivalent | 128 aa | Ancestral LOV-STAS construct with LOV-STAS linker / J-alpha-like segment |
+| `WT_EL222_1_163` | EL222 1-163 | 163 aa | Wild-type LOV domain plus connector J-alpha-helix |
+| `AncHTH_Node83_EL222_1_170eq` | EL222 1-170 equivalent | 148 aa | Ancestral LOV-HTH construct with J-alpha-like connector segment |
 
 ## Design rationale
 
@@ -35,15 +35,15 @@ For each class, a wild-type reference construct and an ancestral construct were 
 
 The AsLOV2 construct was defined using residues 404-560.
 
-This region contains the LOV2 core and the C-terminal Jalpha-containing region. The ancestral plant-like construct was extracted from `plant_linsi_Node62` using the same AsLOV2 404-560 reference coordinates.
+This region contains the LOV2 core and the C-terminal J-alpha-containing region. The ancestral plant-like construct was extracted from `plant_linsi_Node62` using the same AsLOV2 404-560 reference coordinates.
 
-The ancestral sequence retained the C-terminal segment corresponding to the AsLOV2 Jalpha-containing region, so no additional extension was applied.
+The ancestral sequence retained the C-terminal segment corresponding to the AsLOV2 J-alpha-containing region, so no additional extension was applied.
 
 ### LOV-STAS / YtvA
 
 The YtvA construct was defined using residues 20-147.
 
-This region contains the LOV core and the downstream LOV-STAS linker / Jalpha-like segment, while excluding the STAS domain body.
+This region contains the LOV core and the downstream LOV-STAS linker / J-alpha-like segment, while excluding the STAS domain body.
 
 Alignment of the ancestral `Node227` sequence against the YtvA reference showed that the C-terminal LOV-STAS linker region was well preserved with minimal gaps. Therefore, the YtvA 20-147-equivalent ancestral construct was retained as the final LOV-STAS candidate.
 
@@ -52,14 +52,14 @@ Alignment of the ancestral `Node227` sequence against the YtvA reference showed 
 The reported EL222 domain boundary was used as the reference:
 
 - LOV domain: residues 1-144
-- connector Jalpha-helix: residues 145-163
+- connector J-alpha-helix: residues 145-163
 - HTH domain: residues 164-222
 
-Therefore, the wild-type EL222 construct was defined as residues 1-163, including the LOV domain and the connector Jalpha-helix.
+Therefore, the wild-type EL222 construct was defined as residues 1-163, including the LOV domain and the connector J-alpha-helix.
 
 For the ancestral HTH candidate, the strict EL222 1-163-equivalent extraction retained a relatively short C-terminal connector segment because of alignment gaps. Therefore, EL222 1-163, 1-170, and 1-175 equivalent ancestral constructs were compared.
 
-The EL222 1-170-equivalent construct was selected as the primary ancestral HTH candidate because it preserved the Jalpha-like charged/helical connector segment more completely while minimizing extension into the HTH domain.
+The EL222 1-170-equivalent construct was selected as the primary ancestral HTH candidate because it preserved the J-alpha-like charged/helical connector segment more completely while minimizing extension into the HTH domain.
 
 ## Important note on reference boundaries
 

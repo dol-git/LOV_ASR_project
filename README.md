@@ -25,13 +25,13 @@ LOV domains are blue-light-sensing protein modules that bind flavin cofactors su
 
 Upon blue-light irradiation, a conserved cysteine residue forms a covalent adduct with the flavin cofactor, triggering structural changes that are transmitted to output domains.
 
-Although the LOV core is conserved, different LOV-containing proteins use this core in distinct ways. In this project, three representative architecture classes were used as reference systems for construct design.
+Although the LOV core is conserved, different LOV-containing proteins use this core in distinct ways. In this project, three representative architecture classes were selected as reference systems for construct design.
 
 ## Representative architectures
 
 | Protein family | Representative protein | Architecture | Signaling strategy |
 |---|---|---|---|
-| Plant phototropin-like LOV2 | AsLOV2 | LOV2 + Jalpha / kinase-associated region | Monomeric conformational change |
+| Plant phototropin-like LOV2 | AsLOV2 | LOV2 + J-alpha / kinase-associated region | Monomeric conformational change |
 | LOV-STAS | YtvA | LOV + STAS | LOV-STAS linker-mediated signaling |
 | LOV-HTH | EL222 | LOV + HTH DNA-binding domain | Light-regulated DNA binding |
 
@@ -100,29 +100,39 @@ Current milestone: computational construct design and selection completed.
 
 ---
 
-## Dataset Construction
+## Dataset Collection
 
-Representative LOV proteins used as reference systems:
+Initial LOV candidate sequences were collected using representative proteins as search seeds.
 
-- AsLOV2
-- YtvA
-- EL222
+The main seed proteins were:
 
-Sequences were classified into architecture groups including:
+- AsLOV2 for plant phototropin-like LOV2 proteins
+- YtvA for LOV-STAS proteins
+- EL222 for LOV-HTH proteins
 
-- phototropin-like LOV
-- LOV-STAS
-- LOV-HTH
+Homologous sequences were collected mainly through UniProt BLAST searches using these representative proteins as queries. The search results were manually inspected and filtered to retain proteins that contained recognizable LOV/PAS-like light-sensing regions and informative output-domain architectures.
+
+The collected sequences were then grouped by domain architecture. The main groups used for downstream analysis were:
+
+- plant phototropin-like LOV proteins
+- LOV-STAS proteins
+- LOV-HTH proteins
+
+LOV-HK proteins were also inspected during the broader classification stage, but they were not selected for the final expression construct set described in this repository.
+
+After collection and classification, sequences were filtered, aligned, and separated into plant-like and bacterial datasets for phylogenetic analysis and ASR.
+
+Note: exact initial BLAST hit counts and post-filtering counts should be recorded from the original dataset-generation files when those files are added to the repository.
 
 ---
 
 ## Domain Architecture Classification
 
-| Category | Description |
-|---|---|
-| Phototropin-like LOV | Plant-like LOV proteins related to phototropin LOV2 systems |
-| LOV-STAS | YtvA-like proteins containing LOV and STAS modules |
-| LOV-HTH | EL222-like proteins containing LOV and HTH DNA-binding modules |
+| Category | Description | Final construct selected |
+|---|---|---|
+| Phototropin-like LOV | Plant-like LOV proteins related to phototropin LOV2 systems | Yes |
+| LOV-STAS | YtvA-like proteins containing LOV and STAS modules | Yes |
+| LOV-HTH | EL222-like proteins containing LOV and HTH DNA-binding modules | Yes |
 
 ---
 
@@ -217,7 +227,7 @@ The working construct-design files are stored in:
 
 The wild-type AsLOV2 construct was defined as residues 404-560.
 
-This region contains the LOV2 core and the C-terminal Jalpha-containing region. The ancestral plant-like construct was extracted from Node62 using the same AsLOV2 404-560 reference coordinates.
+This region contains the LOV2 core and the C-terminal J-alpha-containing region. The ancestral plant-like construct was extracted from Node62 using the same AsLOV2 404-560 reference coordinates.
 
 Both the wild-type and ancestral AsLOV2-like constructs have been submitted for ordering.
 
@@ -225,7 +235,7 @@ Both the wild-type and ancestral AsLOV2-like constructs have been submitted for 
 
 The YtvA construct was defined as residues 20-147.
 
-This region contains the LOV core and the downstream LOV-STAS linker / Jalpha-like segment while excluding the STAS domain body.
+This region contains the LOV core and the downstream LOV-STAS linker / J-alpha-like segment while excluding the STAS domain body.
 
 The ancestral Node227 sequence preserved the corresponding linker region with minimal gaps, so the YtvA 20-147-equivalent construct was retained.
 
@@ -234,14 +244,14 @@ The ancestral Node227 sequence preserved the corresponding linker region with mi
 The EL222 reference boundary was defined as:
 
 - LOV domain: residues 1-144
-- connector Jalpha-helix: residues 145-163
+- connector J-alpha helix: residues 145-163
 - HTH domain: residues 164-222
 
 Therefore, the wild-type EL222 construct was defined as residues 1-163.
 
 For the ancestral HTH candidate, strict extraction using the EL222 1-163 boundary retained a relatively short C-terminal connector segment due to alignment gaps. Therefore, EL222 1-163, 1-170, and 1-175 equivalent ancestral constructs were compared.
 
-The EL222 1-170-equivalent ancestral construct was selected because it preserved the Jalpha-like charged/helical connector segment more completely while minimizing extension into the HTH domain.
+The EL222 1-170-equivalent ancestral construct was selected because it preserved the J-alpha-like charged/helical connector segment more completely while minimizing extension into the HTH domain.
 
 ---
 
