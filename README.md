@@ -113,7 +113,6 @@ Sequences were classified into architecture groups including:
 - phototropin-like LOV
 - LOV-STAS
 - LOV-HTH
-- LOV-HK
 
 ---
 
@@ -124,7 +123,6 @@ Sequences were classified into architecture groups including:
 | Phototropin-like LOV | Plant-like LOV proteins related to phototropin LOV2 systems |
 | LOV-STAS | YtvA-like proteins containing LOV and STAS modules |
 | LOV-HTH | EL222-like proteins containing LOV and HTH DNA-binding modules |
-| LOV-HK | Histidine kinase-associated LOV proteins |
 
 ---
 
