@@ -55,9 +55,9 @@ corresponding extant reference constructs have been defined for downstream
 comparison.
 
 Preliminary laboratory work has started for the AsLOV2 ancestral/extant pair,
-including plasmid preparation, expression screening, purification trials,
-UV-visible measurements, and SDS-PAGE assessment. This work is ongoing and has
-not yet produced a validated comparative conclusion.
+with expression, purification, and spectroscopy in progress. Experimental
+conditions and measurements are still being optimized and repeated, and no
+validated comparative conclusion has been reached.
 
 Raw experimental data have not been uploaded to this repository. In
 particular, this repository currently contains no:
@@ -117,8 +117,9 @@ Large working files, raw alignment runs, ASR state files, indel-aware
 intermediates, and raw AlphaFold outputs are not included in this compact
 GitHub repository.
 
-Preliminary laboratory activities are documented outside this repository and
-are not counted as completed validated results here.
+Raw experimental records are maintained outside this repository, and
+preliminary laboratory work is not counted as a completed validated result
+here.
 
 ## Repository Structure
 
@@ -225,18 +226,17 @@ Raw AlphaFold output directories are maintained outside this GitHub repository.
 
 ## Experimental Status
 
-Experimental work is ongoing and preliminary. As of the week of June 1–4,
-2026, both WT-AsLOV2 and ancestral AsLOV2 have been expressed in *E. coli*,
-affinity-purified using a HisTrap column, assessed by SDS-PAGE, and subjected
-to dark- and light-state UV-visible spectroscopy. Purification conditions and
-spectroscopic measurements are currently being refined and repeated.
+Experimental work on the AsLOV2 ancestral/extant pair is ongoing and
+preliminary. Expression, purification, and spectroscopy workflows are in
+progress, with experimental conditions and measurements being optimized and
+repeated.
 
 These activities establish the current experimental stage, not a final result.
-The available records do not yet support a validated comparison of expression
-yield, purity, flavin incorporation, photochemical response, or dark-recovery
-kinetics between the ancestral and extant constructs. Results from these
-activities are not reported in this repository because the corresponding raw
-data and analysis records have not been uploaded.
+The available records do not yet support validated conclusions about
+comparative expression, purification, spectroscopy, photochemical behavior, or
+dark-recovery kinetics. Results from these activities are not reported in this
+repository because the corresponding raw data and analysis records have not
+been uploaded.
 
 When experimental records are added, computational predictions should be
 clearly separated from observed measurements, and each conclusion should be

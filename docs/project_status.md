@@ -20,12 +20,9 @@ preliminary.
 - Late April to early May 2026: cross-alignment convergence analysis,
   literature-guided construct boundary selection, and finalization of the
   current ancestral/extant construct set.
-- May 2026: construct synthesis, plasmid preparation, and preliminary
-  laboratory work began for the AsLOV2 ancestral/extant pair.
-- June 2026 (week of June 1–4): HisTrap-column affinity purification of both
-  WT-AsLOV2 and ancestral AsLOV2 performed; SDS-PAGE and dark- and
-  light-state UV-visible spectroscopy conducted; purification conditions and
-  measurements are being refined and repeated.
+- Current experimental phase: preliminary expression, purification, and
+  spectroscopy work is ongoing for the AsLOV2 ancestral/extant pair, with
+  repeated measurements and optimization in progress.
 
 ## Completed Computational Work
 
@@ -56,17 +53,13 @@ validation.
 
 ## Experimental Status
 
-Experimental work is ongoing and should be considered preliminary. As of the
-week of June 1–4, 2026, the AsLOV2 ancestral/extant comparison has progressed
-through plasmid preparation, expression screening, affinity purification (HisTrap
-column), SDS-PAGE assessment, and dark- and light-state UV-visible spectroscopy
-of both WT-AsLOV2 and ancestral AsLOV2 samples. Purification conditions and
-spectroscopic measurements are currently being refined and will be repeated.
+Experimental work on the AsLOV2 ancestral/extant comparison is ongoing and
+should be considered preliminary. Expression, purification, and spectroscopy
+are in progress, with repeated measurements and optimization continuing.
 
 These activities are treated only as evidence of experimental progress. They
-do not yet establish a validated comparison of expression yield, sample purity,
-flavin incorporation, photochemical behavior, or dark-recovery kinetics between
-the ancestral and extant constructs.
+do not yet establish validated conclusions about comparative expression,
+purification, spectroscopy, photochemical behavior, or dark-recovery kinetics.
 
 Raw experimental files have not been uploaded, including:
 
@@ -82,10 +75,8 @@ oligomeric state, or signaling activity.
 
 ## Current Next Steps
 
-- continue reproducible purification of ancestral and extant AsLOV2 samples
-- assess sample quality before comparative interpretation
-- perform controlled spectroscopic measurements, including light/dark
-  comparisons where appropriate
+- continue expression, purification, and spectroscopy optimization
+- repeat measurements before comparative interpretation
 - preserve raw spectra, gel images, chromatograms, and experimental metadata
   before adding experimental conclusions to the repository
 - extend experimental work to additional selected constructs only after their
