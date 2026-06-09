@@ -77,21 +77,13 @@ records are maintained outside this repository.
 ## Computational Workflow
 
 ```mermaid
-flowchart TD
-    A[LOV homolog collection] --> B[Domain architecture classification]
-    B --> C1[Phototropin-like LOV2 branch]
-    B --> C2[Bacterial LOV-associated branch]
-    C1 --> D[MAFFT alignment comparison]
-    C2 --> D
-    D --> E[IQ-TREE phylogenetic inference]
-    E --> F[Tree topology comparison]
-    F --> G[Ancestral sequence reconstruction]
-    G --> H[ConsistASR indel-aware workflow]
-    H --> I[Cross-alignment candidate comparison]
-    I --> J[AlphaFold-based structural screening]
-    J --> K[Literature-guided construct boundaries]
-    K --> L[Selected ancestral and extant constructs]
-    L --> M[Preliminary experimental characterization]
+flowchart LR
+    A[LOV homologs<br/>and architecture classes]
+    B[MAFFT + IQ-TREE<br/>ASR + ConsistASR]
+    C[Convergence and<br/>AlphaFold screening]
+    D[Final constructs<br/>for experimental testing]
+
+    A --> B --> C --> D
 ```
 
 Key steps: LOV homolog collection and domain classification → MAFFT alignment
