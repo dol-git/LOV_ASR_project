@@ -1,7 +1,33 @@
 #!/usr/bin/env python3
-from collections import defaultdict
+"""
+lov_architecture_classifier.py
+
+Classify LOV-containing proteins by domain architecture using HMMER domtblout
+output.  For each sequence the script assigns:
+
+  subtype  — one of: lov_kinase_euk, lov_hk_bact, lov_stas, lov_hth,
+                      lov_pas_only, non_lov_like, no_hit
+  decision — keep | review | exclude
+  score    — integer quality score
+
+Outputs:
+  <outprefix>.summary.tsv      — full per-sequence classification table
+  <outprefix>.keep.fasta       — sequences with decision == "keep"
+  <outprefix>.review.fasta     — sequences with decision == "review"
+  <outprefix>.<subtype>.fasta  — one file per non-excluded subtype
+
+Usage:
+    python lov_architecture_classifier.py \\
+        --domtblout input.domtblout \\
+        --fasta     input.fasta \\
+        --outprefix lov_arch
+"""
+
 import argparse
 import csv
+import sys
+from collections import defaultdict
+from pathlib import Path
 
 # -----------------------------
 # Default thresholds
@@ -56,7 +82,7 @@ def safe_int(x):
 # -----------------------------
 # Parsing
 # -----------------------------
-def parse_domtblout(path, min_ievalue):
+def parse_domtblout(path: Path, min_ievalue: float) -> dict:
     proteins = defaultdict(list)
 
     with open(path, "r", encoding="utf-8") as f:
@@ -89,7 +115,7 @@ def parse_domtblout(path, min_ievalue):
     return proteins
 
 
-def read_fasta(path):
+def read_fasta(path: Path) -> dict:
     seqs = {}
     current_id = None
     current_lines = []
@@ -193,14 +219,26 @@ def classify_protein(hits):
 # -----------------------------
 # Main
 # -----------------------------
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--domtblout", required=True)
-    parser.add_argument("--fasta", required=True)
-    parser.add_argument("--outprefix", default="lov_arch")
-    parser.add_argument("--min_ievalue", type=float, default=DEFAULT_IEVALUE)
+def main() -> None:
+    parser = argparse.ArgumentParser(
+        description="Classify LOV-containing proteins by domain architecture."
+    )
+    parser.add_argument("--domtblout", required=True, type=Path,
+                        help="HMMER --domtblout output file")
+    parser.add_argument("--fasta",     required=True, type=Path,
+                        help="Input FASTA file (sequences to classify)")
+    parser.add_argument("--outprefix", default="lov_arch",
+                        help="Output file prefix (default: lov_arch)")
+    parser.add_argument("--min_ievalue", type=float, default=DEFAULT_IEVALUE,
+                        help=f"i-Evalue cutoff for domain hits "
+                             f"(default: {DEFAULT_IEVALUE})")
 
     args = parser.parse_args()
+
+    if not args.domtblout.exists():
+        sys.exit(f"[ERROR] domtblout file not found: {args.domtblout}")
+    if not args.fasta.exists():
+        sys.exit(f"[ERROR] FASTA file not found: {args.fasta}")
 
     proteins = parse_domtblout(args.domtblout, args.min_ievalue)
     seqs = read_fasta(args.fasta)
@@ -230,7 +268,6 @@ def main():
         decision_groups[result["decision"]].append(pid)
         subtype_groups[result["subtype"]].append(pid)
 
-    # 🔥 정렬 개선
     rows.sort(
         key=lambda x: (
             DECISION_PRIORITY[x["decision"]],
@@ -251,11 +288,12 @@ def main():
         if decision != "exclude":
             write_fasta(f"{args.outprefix}.{decision}.fasta", ids, seqs)
 
-    # subtype FASTA (exclude 제거)
+    # Build a lookup dict to avoid an O(n²) linear scan per protein.
+    row_by_pid = {r["protein_id"]: r for r in rows}
     for subtype, ids in subtype_groups.items():
         valid_ids = [
             pid for pid in ids
-            if next(r for r in rows if r["protein_id"] == pid)["decision"] != "exclude"
+            if row_by_pid[pid]["decision"] != "exclude"
         ]
         if valid_ids:
             write_fasta(f"{args.outprefix}.{subtype}.fasta", valid_ids, seqs)
