@@ -1,310 +1,270 @@
-# LOV ASR Project
+# Evolutionary Design Principles of LOV-Domain Photoreceptors
 
-## Overview
+## Project Goal
 
-This repository documents an undergraduate research project on the evolutionary design principles of LOV-domain photoreceptor proteins.
+This repository documents an undergraduate graduation research project on the
+evolutionary design principles of light-oxygen-voltage (LOV) photoreceptor
+proteins.
 
-The project combines ancestral sequence reconstruction (ASR), phylogenetic analysis, indel-aware sequence refinement, AlphaFold-based structural evaluation, and literature-based construct design to select ancestral LOV-domain candidates for future biochemical and spectroscopic experiments.
+The project uses phylogenetic analysis and ancestral sequence reconstruction
+(ASR), sequence and structure analysis, and experimental characterization to
+investigate LOV-domain diversification. ASR is used to identify experimentally
+testable ancestral constructs rather than as an endpoint by itself. The main
+comparison focuses on three signaling architectures:
 
-The central aim is not simply to reconstruct ancestral sequences, but to understand how a conserved LOV light-sensing core diversified into different signaling systems.
+- phototropin-like LOV2 proteins, represented by AsLOV2
+- LOV-STAS proteins, represented by YtvA
+- LOV-HTH proteins, represented by EL222
 
-The main biological questions are:
+The broader goal is to investigate how a conserved LOV sensory core may have
+become coupled to different signaling regions during evolution, and how those
+evolutionary hypotheses can be examined through comparison of ancestral and
+extant proteins.
 
-1. How did LOV-domain photochemistry evolve?
-2. How did dark recovery kinetics diversify among LOV proteins?
-3. How did different output modules become linked to a common LOV sensor core?
-4. Can evolutionary principles of LOV proteins inform synthetic biology and optogenetic protein design?
+## Scientific Motivation
 
-This repository currently reflects the computational design and construct selection stage. Experimental validation will be added in future updates.
+LOV domains share a conserved flavin-binding sensory fold but occur in proteins
+with different signaling partners and regulatory mechanisms. Comparing
+reconstructed ancestors with extant reference proteins provides a way to
+generate testable hypotheses about which sequence and structural features were
+retained or changed as these signaling architectures diversified.
 
----
+The project therefore connects three levels of analysis:
 
-## Background
+- evolutionary history inferred from sequence and phylogenetic evidence
+- structural hypotheses generated from reconstructed proteins
+- experimental characterization of selected ancestral/extant pairs
 
-LOV domains are blue-light-sensing protein modules that bind flavin cofactors such as FMN.
+## Research Question
 
-Upon blue-light irradiation, a conserved cysteine residue forms a covalent adduct with the flavin cofactor, triggering structural changes that are transmitted to output domains.
+The central research question is:
 
-Although the LOV core is conserved, different LOV-containing proteins use this core in distinct ways. In this project, three representative architecture classes were selected as reference systems for construct design.
+> How did a conserved LOV light-sensing core diversify across different
+> signaling architectures, and can reconstructed ancestral proteins provide
+> testable candidates for studying that diversification?
 
-## Representative architectures
+The computational analysis is used to generate candidates and hypotheses. It
+does not by itself establish ancestral biochemical properties, photochemical
+kinetics, expression behavior, or biological function.
 
-| Protein family | Representative protein | Architecture | Signaling strategy |
-|---|---|---|---|
-| Plant phototropin-like LOV2 | AsLOV2 | LOV2 + J-alpha / kinase-associated region | Monomeric conformational change |
-| LOV-STAS | YtvA | LOV + STAS | LOV-STAS linker-mediated signaling |
-| LOV-HTH | EL222 | LOV + HTH DNA-binding domain | Light-regulated DNA binding |
+## Current Status
 
----
+The computational candidate-selection and construct-design stages represented
+in this repository are complete. Three ancestral candidates and three
+corresponding extant reference constructs have been defined for downstream
+comparison.
 
-## Research Concept
+Preliminary laboratory work has started for the AsLOV2 ancestral/extant pair,
+including plasmid preparation, expression screening, purification trials,
+UV-visible measurements, and SDS-PAGE assessment. This work is ongoing and has
+not yet produced a validated comparative conclusion.
 
-A conserved LOV sensory core can be evolutionarily coupled to different output mechanisms.
+Raw experimental data have not been uploaded to this repository. In
+particular, this repository currently contains no:
 
-This project uses ancestral sequence reconstruction to compare how LOV-domain proteins may have diversified across different signaling architectures.
+- UV-visible absorption spectra
+- dark-recovery kinetic measurements
+- SDS-PAGE or gel images
+- protein purification chromatograms
+- cloning, expression, or purification records
+- laboratory notebook data
 
----
+No experimental validation claim should be inferred from the computational
+candidate selection or structure-prediction assessment documented here.
 
-## Repository Status
+See [`docs/project_status.md`](docs/project_status.md) for a concise progress
+summary.
 
-Current milestone: computational construct design and selection completed.
+## Computational Workflow
 
-## This repository currently contains
+The computational and experimental workflow is:
 
-- selected ancestral construct candidates
-- tree files used for phylogenetic comparison
-- sequence identity summaries
-- construct design outputs
-- literature-based construct boundary rationale
-- documentation of the selection strategy
+1. Collect LOV-containing protein homologs using representative query proteins.
+2. Classify candidate proteins by LOV-associated domain architecture.
+3. Filter and separate plant-like and bacterial sequence datasets.
+4. Generate multiple sequence alignments with MAFFT AUTO, L-INS-i, E-INS-i,
+   and G-INS-i.
+5. Infer phylogenetic trees with IQ-TREE.
+6. Compare tree topologies across alignment strategies.
+7. Perform ancestral sequence reconstruction.
+8. Apply indel-aware sequence refinement through the ConsistASR workflow.
+9. Extract candidate ancestral nodes from multiple alignment/tree conditions.
+10. Compare candidate convergence using pairwise sequence identity.
+11. Assess candidate structural plausibility using AlphaFold-based predictions.
+12. Map selected ancestral sequences to literature-supported reference
+    construct boundaries.
+13. Prepare final extant and ancestral construct FASTA records.
+14. Begin experimental comparison through expression, purification, and
+    spectroscopic characterization.
 
-## Not yet included
+## Completed In Silico Work
 
-- experimental validation
-- spectroscopy
-- dark recovery kinetics
+The following computational stages are represented by files in this
+repository:
 
----
+- LOV architecture classification utility and curated candidate groupings
+- bacterial and plant phylogenetic trees from four MAFFT alignment strategies
+- pairwise tree-topology comparison tables
+- ancestral candidate sequences from multiple reconstruction conditions
+- indel-aware candidate selection carried forward from the working analysis
+- pairwise sequence-identity and convergence summaries
+- consensus sequences used as comparison artifacts
+- reference-coordinate construct extraction
+- construct-boundary rationale for AsLOV2, YtvA, and EL222 systems
+- final FASTA records for six proposed expression constructs
 
-## Project Workflow
+Large working files, raw alignment runs, ASR state files, indel-aware
+intermediates, and raw AlphaFold outputs are not included in this compact
+GitHub repository.
 
-1. Collection of LOV-containing protein sequences
-2. Domain architecture classification
-3. Dataset filtering
-4. Multiple sequence alignment using MAFFT
-5. Phylogenetic tree inference using IQ-TREE
-6. Tree topology comparison
-7. Ancestral sequence reconstruction using ConsistASR
-8. Indel-aware sequence refinement
-9. Candidate extraction
-10. Sequence convergence analysis
-11. AlphaFold-based structural evaluation
-12. Literature-based construct boundary mapping
-13. Final expression construct selection
-
----
+Preliminary laboratory activities are documented outside this repository and
+are not counted as completed validated results here.
 
 ## Repository Structure
 
-| Directory | Contents |
+| Path | Contents |
 |---|---|
-| `constructs/` | Candidate ancestral sequences, consensus sequences, pairwise identity tables, and construct-design working files |
-| `constructs/construct_design/` | Working files used for reference-based construct extraction |
-| `results/construct_design/` | Clean construct-design records prepared for GitHub documentation |
-| `results/construct_design/final_order_fastas/` | Final FASTA records for selected WT and ancestral constructs |
-| `trees/` | IQ-TREE tree files and topology comparison outputs |
-| `scripts/` | Utility scripts for classification and analysis |
-| `figures/` | Figures for summaries and future reports |
-| `docs/` | Additional documentation |
-| `data/` | Data placeholder directory |
+| `constructs/` | Candidate ancestral sequences, pairwise identity summaries, consensus comparisons, metadata, and construct-design working files |
+| `constructs/bacterial/` | Candidate bacterial LOV-STAS, LOV-HTH, and LOV-HK ancestral sequences evaluated during selection |
+| `constructs/plant/` | Plant phototropin-like ancestral candidates from multiple alignment strategies |
+| `constructs/construct_design/` | Reference sequences, alignments, extraction script, and intermediate construct outputs |
+| `results/construct_design/` | Reviewed construct-design rationale and final construct records |
+| `results/construct_design/final_order_fastas/` | Combined FASTA files for the selected extant and ancestral constructs |
+| `trees/` | Bacterial and plant IQ-TREE tree files |
+| `trees/comparison/` | Pairwise topology comparison tables and matrices |
+| `scripts/` | Domain-architecture classification utility |
+| `docs/` | Project progress and repository-scope documentation |
 
----
+## Alignment and Phylogenetic Robustness
 
-## Dataset Collection
+Four MAFFT strategies were compared:
 
-Initial LOV candidate sequences were collected using representative proteins as search seeds.
+- AUTO
+- L-INS-i
+- E-INS-i
+- G-INS-i
 
-The main seed proteins were:
+The repository contains IQ-TREE tree files for bacterial and plant datasets and
+pairwise topology summaries under `trees/comparison/`. These comparisons were
+used to assess alignment sensitivity and to avoid basing candidate selection on
+a single alignment condition.
 
-- AsLOV2 for plant phototropin-like LOV2 proteins
-- YtvA for LOV-STAS proteins
-- EL222 for LOV-HTH proteins
+The topology tables show that the inferred trees are not identical across
+alignment methods. They therefore support comparative robustness assessment,
+not a claim that one unique evolutionary topology has been conclusively
+established.
 
-Homologous sequences were collected mainly through UniProt BLAST searches using these representative proteins as queries. The search results were manually inspected and filtered to retain proteins that contained recognizable LOV/PAS-like light-sensing regions and informative output-domain architectures.
+## Candidate Selection
 
-The collected sequences were then grouped by domain architecture. The main groups used for downstream analysis were:
+Candidate evaluation considered:
 
-- plant phototropin-like LOV proteins
-- LOV-STAS proteins
-- LOV-HTH proteins
-
-LOV-HK proteins were also inspected during the broader classification stage, but they were not selected for the final expression construct set described in this repository.
-
-After collection and classification, sequences were filtered, aligned, and separated into plant-like and bacterial datasets for phylogenetic analysis and ASR.
-
-Note: exact initial BLAST hit counts and post-filtering counts should be recorded from the original dataset-generation files when those files are added to the repository.
-
----
-
-## Domain Architecture Classification
-
-| Category | Description | Final construct selected |
-|---|---|---|
-| Phototropin-like LOV | Phototropin-like LOV proteins related to phototropin LOV2 systems | Yes |
-| LOV-STAS | YtvA-like proteins containing LOV and STAS modules | Yes |
-| LOV-HTH | EL222-like proteins containing LOV and HTH DNA-binding modules | Yes |
-
----
-
-## Alignment Strategy
-
-Multiple alignment strategies were used to evaluate robustness:
-
-- MAFFT AUTO
-- MAFFT L-INS-i
-- MAFFT E-INS-i
-- MAFFT G-INS-i
-
-The goal was to identify ancestral candidates that were not artifacts of a single alignment condition.
-
----
-
-## Phylogenetic Analysis
-
-Phylogenetic trees were inferred using IQ-TREE.
-
-Tree topology comparisons were used to evaluate whether candidate ancestral nodes were stable across alignment strategies.
-
-Tree files and comparison outputs are stored in:
-
-- `trees/`
-- `trees/comparison/`
-
----
-
-## Ancestral Sequence Reconstruction
-
-Ancestral sequence reconstruction was performed using ConsistASR.
-
-Indel-aware refinement was used to avoid artificially overextended ancestral sequences and to generate more realistic candidate proteins for structure prediction and experimental design.
-
----
-
-## Candidate Selection Strategy
-
-Candidate ancestral sequences were evaluated using the following criteria:
-
-- sequence convergence across alignment conditions
-- structural consistency
+- sequence convergence across alignment strategies
 - preservation of the conserved LOV cysteine
-- compatibility with known reference proteins
-- literature-supported construct boundaries
-- phylogenetic interpretability
-- suitability for future expression and spectroscopy
+- consistency with the relevant LOV architecture
+- indel-aware reconstructed sequence length and composition
+- structural plausibility in AlphaFold-based predictions
+- interpretability of the selected phylogenetic node
+- compatibility with literature-supported experimental boundaries
 
----
+The selected ancestral design sources carried into final construct preparation
+were:
 
-## Construct Design Strategy
+- plant phototropin-like candidate: `plant_linsi_Node62`
+- LOV-STAS candidate: `bacterial_ginsi_STAS_Node227`
+- LOV-HTH candidate: `bacterial_ginsi_HTH_Node83`
 
-The construct design step was not limited to extracting the conserved LOV core.
+LOV-HK candidates remain in the repository because they were evaluated during
+the broader computational analysis, but no LOV-HK construct is included in the
+current final six-construct set.
 
-For each architecture, the construct boundary was chosen to include the relevant C-terminal helix or linker region that may participate in signal transmission.
+Pairwise identity tables are available at:
 
-The final design used both:
-
-1. Literature-supported reference boundaries
-2. The actual retained ancestral residues after reference-coordinate extraction
-
-This was important because ancestral sequences can contain gaps relative to modern reference proteins. Therefore, the length of an ancestral construct does not always match the length of the corresponding wild-type reference construct.
-
-Detailed construct-design records are stored in:
-
-- `results/construct_design/README.md`
-- `results/construct_design/final_order_fastas/`
-
-The working construct-design files are stored in:
-
-- `constructs/construct_design/`
-
----
-
-## Final Selected Construct Set
-
-| Construct name | Reference boundary | Length | Status |
-|---|---:|---:|---|
-| `WT_AsLOV2_404_560` | AsLOV2 404-560 | 157 aa | Ordered |
-| `AncPlant_Node62_AsLOV2_404_560eq` | AsLOV2 404-560 equivalent | 157 aa | Ordered |
-| `WT_YtvA_20_147` | YtvA 20-147 | 128 aa | Prepared |
-| `AncSTAS_Node227_YtvA_20_147eq` | YtvA 20-147 equivalent | 128 aa | Prepared |
-| `WT_EL222_1_163` | EL222 1-163 | 163 aa | Prepared |
-| `AncHTH_Node83_EL222_1_170eq` | EL222 1-170 equivalent | 148 aa | Prepared |
-
----
-
-## Construct Boundary Rationale
-
-### AsLOV2 / phototropin-like LOV2
-
-The wild-type AsLOV2 construct was defined as residues 404-560.
-
-This region contains the LOV2 core and the C-terminal J-alpha-containing region. The ancestral plant-like construct was extracted from Node62 using the same AsLOV2 404-560 reference coordinates.
-
-Both the wild-type and ancestral AsLOV2-like constructs have been submitted for ordering.
-
-### YtvA / LOV-STAS
-
-The YtvA construct was defined as residues 20-147.
-
-This region contains the LOV core and the downstream LOV-STAS linker / J-alpha-like segment while excluding the STAS domain body.
-
-The ancestral Node227 sequence preserved the corresponding linker region with minimal gaps, so the YtvA 20-147-equivalent construct was retained.
-
-### EL222 / LOV-HTH
-
-The EL222 reference boundary was defined as:
-
-- LOV domain: residues 1-144
-- connector J-alpha helix: residues 145-163
-- HTH domain: residues 164-222
-
-Therefore, the wild-type EL222 construct was defined as residues 1-163.
-
-For the ancestral HTH candidate, strict extraction using the EL222 1-163 boundary retained a relatively short C-terminal connector segment due to alignment gaps. Therefore, EL222 1-163, 1-170, and 1-175 equivalent ancestral constructs were compared.
-
-The EL222 1-170-equivalent ancestral construct was selected because it preserved the J-alpha-like charged/helical connector segment more completely while minimizing extension into the HTH domain.
-
----
-
-## Final FASTA Records
-
-Final construct FASTA files are stored in:
-
-- `results/construct_design/final_order_fastas/all_WT_and_ancestral_order_constructs.fasta`
-- `results/construct_design/final_order_fastas/order_YtvA_EL222_WT_Ancestor_constructs_renamed.fasta`
-
----
-
-## Sequence Identity Analysis
-
-Sequence identity summaries are stored in:
-
-- `constructs/hth_pairwise.tsv`
-- `constructs/hth_pairwise.summary.tsv`
 - `constructs/plant_pairwise.tsv`
-- `constructs/plant_pairwise.summary.tsv`
 - `constructs/stas_pairwise.tsv`
-- `constructs/stas_pairwise.summary.tsv`
+- `constructs/hth_pairwise.tsv`
 
----
+These comparisons describe sequence convergence among reconstructed
+candidates. They are not experimental measurements of protein performance.
+
+## Selected Construct Design
+
+Construct boundaries were chosen using modern reference proteins and retained
+ancestral residues in reference-aligned coordinates. The designs include the
+LOV core and an architecture-relevant C-terminal helix or linker where
+appropriate.
+
+| Construct | Reference boundary | Length | Design status |
+|---|---:|---:|---|
+| `WT_AsLOV2_404_560` | AsLOV2 404-560 | 157 aa | Preliminary laboratory work ongoing |
+| `AncPlant_Node62_AsLOV2_404_560eq` | AsLOV2 404-560 equivalent | 157 aa | Preliminary laboratory work ongoing |
+| `WT_YtvA_20_147` | YtvA 20-147 | 128 aa | Design prepared |
+| `AncSTAS_Node227_YtvA_20_147eq` | YtvA 20-147 equivalent | 128 aa | Design prepared |
+| `WT_EL222_1_163` | EL222 1-163 | 163 aa | Design prepared |
+| `AncHTH_Node83_EL222_1_170eq` | EL222 1-170 equivalent | 148 aa | Design prepared |
+
+Detailed boundary rationale is provided in
+[`results/construct_design/README.md`](results/construct_design/README.md).
+The combined final records are stored in
+[`results/construct_design/final_order_fastas/all_WT_and_ancestral_order_constructs.fasta`](results/construct_design/final_order_fastas/all_WT_and_ancestral_order_constructs.fasta).
+
+The table combines construct-design status with the current high-level project
+stage. Preliminary laboratory work has begun for the AsLOV2 ancestral/extant
+pair, but the underlying experimental files are not included here. These labels
+do not indicate validated expression, purification, folding, or photochemical
+behavior.
 
 ## Structural Evaluation
 
-AlphaFold-based structural evaluation was used to assess:
+AlphaFold-based predictions were used as a computational screening layer for
+fold conservation, domain organization, and the plausibility of terminal
+helical or linker regions. Structure prediction was one component of candidate
+selection and was not treated as evidence of biochemical activity or
+experimental structural validation.
 
-- fold conservation
-- structural stability
-- domain integrity
-- C-terminal helix or linker plausibility
+Raw AlphaFold output directories are maintained outside this GitHub repository.
 
-Further structure-prediction inputs for the final construct set will be prepared after final ordering decisions.
+## Experimental Status
 
----
+Experimental work is ongoing and preliminary. As of the week of June 1–4,
+2026, both WT-AsLOV2 and ancestral AsLOV2 have been expressed in *E. coli*,
+affinity-purified using a HisTrap column, assessed by SDS-PAGE, and subjected
+to dark- and light-state UV-visible spectroscopy. Purification conditions and
+spectroscopic measurements are currently being refined and repeated.
 
-## Summary
+These activities establish the current experimental stage, not a final result.
+The available records do not yet support a validated comparison of expression
+yield, purity, flavin incorporation, photochemical response, or dark-recovery
+kinetics between the ancestral and extant constructs. Results from these
+activities are not reported in this repository because the corresponding raw
+data and analysis records have not been uploaded.
 
-The project has selected three ancestral LOV-domain candidates and their corresponding wild-type reference constructs:
+When experimental records are added, computational predictions should be
+clearly separated from observed measurements, and each conclusion should be
+linked to its underlying raw data.
 
-- AsLOV2-like phototropin LOV2 candidate
-- YtvA-like LOV-STAS candidate
-- EL222-like LOV-HTH candidate
+## Scope and Limitations
 
-The AsLOV2 wild-type and ancestral constructs have already been submitted for ordering. The YtvA and EL222 wild-type/ancestral construct sets are prepared as the next ordering candidates.
-
----
+- Initial sequence collection included manual screening and requires a more
+  complete provenance table for publication-level reproducibility.
+- Exact initial BLAST hit counts and all intermediate filtering counts are not
+  currently documented in this repository.
+- Node identifiers can differ among alignment and tree reconstructions; node
+  names should always be interpreted together with their source analysis.
+- Consensus sequences are comparative summaries and were not automatically
+  selected as expression constructs.
+- Phylogenetic reconstruction and AlphaFold prediction generate hypotheses;
+  neither substitutes for experimental validation.
+- No conclusion about ancestral dark recovery, spectral properties, stability,
+  oligomeric state, or signaling function is claimed at this stage.
 
 ## Next Steps
 
-1. Submit the YtvA and EL222 WT/ancestor constructs for ordering.
-2. Read key papers on AsLOV2, YtvA, and EL222 signal-transmission helices/linkers.
-3. Prepare AlphaFold or ColabFold inputs for the final construct set.
-4. After synthesis, proceed to cloning, expression screening, purification, and spectroscopy.
+1. Maintain a canonical construct manifest linking each final construct to its
+   source reconstruction and boundary rationale.
+2. Record exact software versions, commands, input provenance, and checksums.
+3. Continue controlled ancestral/extant expression, purification, and
+   spectroscopy comparisons.
+4. Add raw experimental data and analysis documentation only after they are
+   organized with clear provenance.
+5. Compare future measurements with the computational hypotheses without
+   overstating agreement or causation.
