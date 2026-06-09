@@ -75,6 +75,39 @@ candidate selection or structure-prediction assessment documented here.
 See [`docs/project_status.md`](docs/project_status.md) for a concise progress
 summary.
 
+## Repository Usage
+
+This repository is a compact, reviewable record of the computational
+candidate-selection and construct-design work.
+
+- Start with this README and [`docs/project_status.md`](docs/project_status.md)
+  for scientific scope and current status.
+- Use `trees/` and `trees/comparison/` to inspect retained phylogenetic outputs
+  and topology comparisons.
+- Use `constructs/` to inspect candidate sequences and convergence summaries.
+- Use `results/construct_design/` for the reviewed construct rationale and
+  current selected FASTA records.
+- Treat scripts as analysis utilities whose outputs should be written to a
+  separate working directory.
+
+Large intermediates, raw structure-prediction outputs, and raw experimental
+records are intentionally maintained outside this GitHub repository.
+
+## Dataset Overview
+
+The phylogenetic and ASR analyses were organized into two broad branches:
+
+| Branch | Biological scope | Architectures carried into candidate analysis |
+|---|---|---|
+| Phototropin-like LOV2 | Plant-like phototropin sequences related to AsLOV2 | Phototropin-like LOV2 |
+| Bacterial LOV-associated | Bacterial LOV proteins grouped by associated signaling regions | LOV-STAS, LOV-HTH, and LOV-HK |
+
+The branches were analyzed separately because their sequence lengths, domain
+architectures, and evolutionary contexts differ. The final selected construct
+set includes a phototropin-like candidate, a LOV-STAS candidate, and a LOV-HTH
+candidate. LOV-HK candidates were evaluated computationally but were not
+carried into the current selected construct set.
+
 ## Computational Workflow
 
 The computational and experimental workflow is:
@@ -96,6 +129,29 @@ The computational and experimental workflow is:
 13. Prepare final extant and ancestral construct FASTA records.
 14. Begin experimental comparison through expression, purification, and
     spectroscopic characterization.
+
+## Workflow Overview
+
+```mermaid
+flowchart TD
+    A[LOV homolog collection] --> B[Domain architecture classification]
+    B --> C1[Phototropin-like LOV2 branch]
+    B --> C2[Bacterial LOV-associated branch]
+    C1 --> D[MAFFT alignment comparison]
+    C2 --> D
+    D --> E[IQ-TREE phylogenetic inference]
+    E --> F[Tree topology comparison]
+    F --> G[Ancestral sequence reconstruction]
+    G --> H[ConsistASR indel-aware workflow]
+    H --> I[Cross-alignment candidate comparison]
+    I --> J[AlphaFold-based structural screening]
+    J --> K[Literature-guided construct boundaries]
+    K --> L[Selected ancestral and extant constructs]
+    L --> M[Preliminary experimental characterization]
+```
+
+Software tools and locally verified versions are listed in
+[`docs/software_environment.md`](docs/software_environment.md).
 
 ## Completed In Silico Work
 
