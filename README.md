@@ -1,5 +1,22 @@
 # Evolutionary Design Principles of LOV-Domain Photoreceptors
 
+## Contents
+
+- [Project Goal](#project-goal)
+- [Scientific Motivation](#scientific-motivation)
+- [Research Question](#research-question)
+- [Project Workflow and Status](#project-workflow-and-status)
+- [Current Interpretation and Validation Plan](#current-interpretation-and-validation-plan)
+- [Repository Usage](#repository-usage)
+- [Dataset Overview](#dataset-overview)
+- [ASR Workflow](#asr-workflow)
+- [Repository Structure](#repository-structure)
+- [Candidate Selection](#candidate-selection)
+- [Selected Constructs](#selected-constructs)
+- [Structural Evaluation](#structural-evaluation)
+- [Reproduction and Validation](#reproduction-and-validation)
+- [Scope, Limitations, and Next Steps](#scope-limitations-and-next-steps)
+
 ## Project Goal
 
 This repository documents an undergraduate graduation research project on the
@@ -43,7 +60,49 @@ The computational analysis generates candidates and hypotheses. It does not by
 itself establish ancestral biochemical properties, photochemical kinetics,
 expression behavior, or biological function.
 
-## Current HMR analysis (reviewed 2026-10-21)
+## Project Workflow and Status
+
+This is the project entry point. Design records are retained below; the
+[documentation guide](docs/README.md) explains external experimental and MD
+preparation requirements. Status reflects reviewed records, not a new analysis
+or a claim that unpublished results are ready for release.
+
+```mermaid
+flowchart TD
+    A[ASR and construct preparation<br/>Design records completed]
+    B[Experimental characterization<br/>Ongoing; comparative results withheld]
+    C[MD preparation and production<br/>Performed; inputs kept externally]
+    H[HMR structural analysis<br/>One confirmed run per system]
+    G[Exploratory gREST branch<br/>Convergence not confirmed]
+    F[Frame selection and ChimeraX<br/>Historical checks; private structures external]
+    I[Current interpretation<br/>Descriptive observations and hypotheses]
+    M[Reciprocal mutation validation<br/>Planned; not established here]
+    A --> B --> C
+    C --> H
+    C --> G
+    H --> F
+    H --> I
+    G -. limited sampling evidence .-> I
+    I --> M
+```
+
+The arrows organize the research questions and evidence; they do not imply that
+all experiments are finished or that each step is an executable pipeline.
+**gREST is a separate exploratory branch from MD preparation, not a prerequisite
+or continuation of the current HMR analysis.**
+
+| Stage | Reviewed status | Detailed entry point |
+|---|---|---|
+| ASR and construct preparation | Candidate selection and six construct designs completed; expression/function not implied | [Construct design](results/construct_design/README.md) and [ASR workflow](#asr-workflow) |
+| Experimental characterization | Expression, purification and spectroscopy pursued for the AsLOV2 pair; comparative results withheld | [Experimental status](docs/project_status.md#experimental-status) and [documentation guide](docs/README.md) |
+| MD preparation and production | Existing topology/adduct/equilibration and completed production records reviewed; complete preparation recipe and build provenance remain external | [Preparation requirements](docs/README.md#required-inputs-and-dependencies) |
+| HMR structural analysis | Existing analysis completed for one confirmed WT and one Anc run; independent-run validation pending | [HMR README](analysis/hmr/README.md) |
+| Frame selection | Medoid plus seven diversity examples per system prepared historically; private structures withheld | [Frame-selection README](analysis/hmr/Ja_core_visual_fps8_20261019/README.md) |
+| ChimeraX visualization | Historical native headless checks passed; GUI rendering/labels unverified | [ChimeraX README](analysis/hmr/chimerax/README.md) |
+| Exploratory gREST | Four exchanging replicas/system, completed 50 ns set and earlier 10 ns pilot; convergence unconfirmed, primary quantitative ensemble use withheld | [gREST README](analysis/grest/README.md) |
+| Interpretation and mutation validation | Mechanistic links remain hypotheses; reciprocal substitutions and controlled assays planned | [Interpretation and validation plan](#current-interpretation-and-validation-plan) |
+
+## Current Interpretation and Validation Plan
 
 The current comparison uses **one confirmed HMR production run for WT and one
 for Anc** (run01 each), not replicated ensembles. Each contains 1,000 stored
@@ -70,7 +129,7 @@ Jα–core contacts and secondary structure within the two available trajectorie
 The checked analysis scope is summarized in [the methods](docs/hmr_analysis.md).
 Unpublished effect sizes, residue-specific result tables and structure figures
 are withheld pending release clearance. Analysis code is preserved under
-[analysis/hmr](analysis/hmr); no analysis was rerun for this update.
+[the HMR guide](analysis/hmr/README.md); no analysis was rerun for this update.
 
 ### 2. Hypotheses not yet validated
 
@@ -97,7 +156,10 @@ See [HMR methods and execution order](docs/hmr_analysis.md),
 
 ## Repository Usage
 
-- Start with this README and [`docs/project_status.md`](docs/project_status.md).
+- Follow [project workflow and status](#project-workflow-and-status) for the research sequence.
+- Use the [documentation guide](docs/README.md) for experimental and MD preparation context.
+- Use the [analysis guide](analysis/README.md) for HMR, frame selection, ChimeraX and gREST.
+- See [`docs/project_status.md`](docs/project_status.md) for the retained progress record.
 - Use `trees/` and `trees/comparison/` for phylogenetic outputs and topology comparisons.
 - Use `constructs/` for candidate sequences and convergence summaries.
 - Use `results/construct_design/` for construct rationale and final FASTA records.
@@ -112,7 +174,7 @@ records are maintained outside this repository.
 | Phototropin-like LOV2 | Plant-like phototropin sequences related to AsLOV2 | Phototropin-like LOV2 |
 | Bacterial LOV-associated | Bacterial LOV proteins grouped by signaling region | LOV-STAS, LOV-HTH, LOV-HK |
 
-## Computational Workflow
+## ASR Workflow
 
 ```mermaid
 flowchart LR
@@ -147,7 +209,10 @@ Software tools and versions are listed in
 | `trees/` | Bacterial and plant IQ-TREE tree files |
 | `trees/comparison/` | Pairwise topology comparison tables and matrices |
 | `scripts/` | Domain-architecture classification utility |
-| `docs/` | Project progress and repository-scope documentation |
+| `docs/` | [Project progress, methods and release-scope documentation](docs/README.md) |
+| `analysis/` | [MD analysis navigation](analysis/README.md) and external-input code snapshots |
+| `analysis/hmr/` | [HMR structural analysis](analysis/hmr/README.md), frame selection and ChimeraX guides |
+| `analysis/grest/` | [Separate exploratory sampling review](analysis/grest/README.md), code and compact diagnostics |
 
 ## Candidate Selection
 
@@ -187,6 +252,26 @@ fold conservation and domain organization. Structure prediction was one
 component of candidate selection and was not treated as evidence of biochemical
 activity or experimental structural validation. Raw outputs are maintained
 outside this repository.
+
+## Reproduction and Validation
+
+Required input files and dependencies vary by stage. ASR tools and recorded
+versions are listed in [software_environment.md](docs/software_environment.md).
+Existing construct outputs are in `results/construct_design/`; experimental raw
+records and MD preparation inputs remain external. HMR and gREST scripts also
+require private topology/trajectory files, mappings and caches. They are
+historical snapshots, not a standalone workflow runnable from a fresh clone.
+
+Follow the conditional execution examples in the [analysis guides](analysis/README.md).
+The HMR order is structural analysis → matched-atom control → optional frame
+selection → viewer configuration → ChimeraX. gREST independently uses exchange
+QC and physical-state reconstruction followed by existing structural stability
+checks. Generated research outputs remain external unless explicitly cleared.
+
+This documentation update checks English prose, relative links, directory
+navigation, syntax and provenance. It does not rerun analysis, submit simulation
+jobs or generate new research results. Historical validation status and remaining
+limitations are recorded separately in each directory README.
 
 ## Scope, Limitations, and Next Steps
 

@@ -29,3 +29,13 @@ the requested sampling review. Unpublished structural effect sizes, coordinates,
 sequences, production inputs and raw reports/logs remain external. See
 [grest_analysis.md](grest_analysis.md). The no-push statement above describes the
 original local HMR documentation update, not the subsequent authorized pushes.
+
+## Documentation organization and language
+
+Public documentation and generated report prose are maintained in English;
+paths and data identifiers keep their original spelling. The block-population
+script's report strings were translated without changing numerical logic.
+Its original source SHA256 is retained alongside the current repository SHA256
+and an adaptation note in `analysis/grest/code_provenance.csv`. Other snapshots
+remain unchanged. Added directory guides document external-input requirements;
+no analysis or private result release accompanies this update.
