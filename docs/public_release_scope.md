@@ -20,3 +20,12 @@ as cleared for publication.
 
 The pre-existing untracked `docs/dataset_construct_map.md` is left untouched
 and excluded from staging. No push is performed.
+
+## Subsequent gREST documentation update
+
+The gREST update adds reviewed methods/code, an account-free launch example,
+execution conditions and a six-row exchange diagnostic table specifically within
+the requested sampling review. Unpublished structural effect sizes, coordinates,
+sequences, production inputs and raw reports/logs remain external. See
+[grest_analysis.md](grest_analysis.md). The no-push statement above describes the
+original local HMR documentation update, not the subsequent authorized pushes.

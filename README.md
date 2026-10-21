@@ -47,9 +47,16 @@ expression behavior, or biological function.
 
 The current comparison uses **one confirmed HMR production run for WT and one
 for Anc** (run01 each), not replicated ensembles. Each contains 1,000 stored
-frames over 0.01–10.00 ns. **gREST is excluded from the current comparative
-analysis because of convergence problems.** Archive/tutorial copies,
+frames over 0.01–10.00 ns. **gREST was attempted; convergence was not confirmed for the evaluated
+length and metrics, so it was not used as primary evidence for quantitative
+ensemble comparisons.** Archive/tutorial copies,
 equilibration trajectories, and trajectory halves are not independent runs.
+
+The gREST attempt used four exchanging replicas per system, with a completed
+50 ns production set per system and an earlier 10 ns pilot. Replicas are not
+independent runs. Exchange mixing and structural convergence are assessed
+separately in [the gREST execution and convergence review](docs/grest_analysis.md).
+Differences between effective-temperature states alone do not show nonconvergence.
 
 ### 1. Observations from experiment and MD
 

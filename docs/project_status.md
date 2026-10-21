@@ -5,8 +5,8 @@ Last documentation review: October 21, 2026
 ## HMR documentation update
 
 The current HMR comparison is now documented in [hmr_analysis.md](hmr_analysis.md):
-one confirmed production run per system, with gREST excluded because of
-convergence problems. Existing analysis and FPS/ChimeraX code snapshots are
+one confirmed production run per system. gREST convergence was not confirmed
+for the evaluated length and metrics; see [gREST review](grest_analysis.md). Existing analysis and FPS/ChimeraX code snapshots are
 preserved under `analysis/hmr/`. No analysis was rerun. Unpublished comparative
 results and research figures remain withheld pending release clearance; see
 [public_release_scope.md](public_release_scope.md). The older experimental

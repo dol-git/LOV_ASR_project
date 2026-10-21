@@ -22,7 +22,9 @@ script assertions in the local historical workspace.
 | Sensitivity windows | Full; first 500; last 500 frames, not independent runs |
 | Diversity display | Global medoid + 7 farthest-point additions per system |
 
-The current comparison excludes gREST because of convergence problems. No
+The current comparison does not use gREST as primary quantitative ensemble evidence:
+convergence was not confirmed for the evaluated length and metrics. See
+[gREST review](grest_analysis.md). No
 separate conventional production run or additional independent HMR replicate
 was confirmed. Backup copies, tutorial copies and equilibration do not increase
 these counts. Production is included in full; no new equilibration cutoff is
