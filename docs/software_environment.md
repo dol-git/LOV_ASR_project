@@ -41,3 +41,26 @@ The locally available HMMER command reports:
   environment export files remain to be consolidated.
 - AlphaFold predictions are computational screening results, not experimental
   structure validation.
+
+## HMR analysis snapshot (reviewed 2026-10-21)
+
+These pins are transcribed from the existing HMR analysis requirements file,
+not a newly installed or freshly tested environment. Existing independent
+validation metadata also records NumPy, MDAnalysis and MDTraj versions.
+Do not substitute the ASR environment above for this analysis environment.
+
+| Package/application | Recorded version | Use |
+|---|---|---|
+| NumPy | 2.4.6 | Coordinates, RMSF, contact summaries |
+| MDAnalysis | 2.10.0 | PSF/DCD/PDB I/O and distance arrays |
+| MDTraj | 1.11.2 | Eight-state DSSP |
+| SciPy | 1.17.1 | Pairwise distances for medoid/FPS |
+| Matplotlib | 3.11.0 | Historical plots (not regenerated or bundled) |
+| ChimeraX | 1.11.1 | Native viewer; historical headless validation |
+| Python used for HMR | to be confirmed | ASR Python version is not evidence for HMR |
+| GENESIS executable used for production | to be confirmed | Exact run binary/build not certified here |
+
+The original script prepends its local `software/` directory for MDTraj;
+that vendor directory is excluded. A future separate workspace must supply the
+recorded packages and external inputs. No dependency installation or version
+compatibility run was performed for this update.

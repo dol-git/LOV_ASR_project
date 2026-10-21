@@ -1,6 +1,17 @@
 # Project Status
 
-Last documentation review: June 9, 2026
+Last documentation review: October 21, 2026
+
+## HMR documentation update
+
+The current HMR comparison is now documented in [hmr_analysis.md](hmr_analysis.md):
+one confirmed production run per system, with gREST excluded because of
+convergence problems. Existing analysis and FPS/ChimeraX code snapshots are
+preserved under `analysis/hmr/`. No analysis was rerun. Unpublished comparative
+results and research figures remain withheld pending release clearance; see
+[public_release_scope.md](public_release_scope.md). The older experimental
+status below describes what is released here, not an assertion that no later
+local measurements exist.
 
 ## Current Phase
 

@@ -43,19 +43,50 @@ The computational analysis generates candidates and hypotheses. It does not by
 itself establish ancestral biochemical properties, photochemical kinetics,
 expression behavior, or biological function.
 
-## Status
+## Current HMR analysis (reviewed 2026-10-21)
 
-Computational candidate-selection and construct-design stages are complete.
-Three ancestral candidates and three extant reference constructs have been
-defined for downstream comparison.
+The current comparison uses **one confirmed HMR production run for WT and one
+for Anc** (run01 each), not replicated ensembles. Each contains 1,000 stored
+frames over 0.01–10.00 ns. **gREST is excluded from the current comparative
+analysis because of convergence problems.** Archive/tutorial copies,
+equilibration trajectories, and trajectory halves are not independent runs.
 
-Preliminary laboratory work has started for the AsLOV2 ancestral/extant pair,
-with expression, purification, and spectroscopy in progress. Conditions and
-measurements are still being optimized; no validated comparative conclusion has
-been reached. Raw experimental data are not included in this repository.
+### 1. Observations from experiment and MD
 
-See [`docs/project_status.md`](docs/project_status.md) for a concise progress
-summary.
+Expression, purification, and spectroscopy have been pursued for the AsLOV2
+pair. Comparative experimental numbers are withheld here because permission to
+release the unpublished results has not been established. This public update
+does not claim a validated kinetic or stability difference.
+
+Existing HMR analyses describe common-core-aligned Cα fluctuations, geometric
+Jα–core contacts and secondary structure within the two available trajectories.
+The checked analysis scope is summarized in [the methods](docs/hmr_analysis.md).
+Unpublished effect sizes, residue-specific result tables and structure figures
+are withheld pending release clearance. Analysis code is preserved under
+[analysis/hmr](analysis/hmr); no analysis was rerun for this update.
+
+### 2. Hypotheses not yet validated
+
+Changes in Jα–core packing or flexibility might contribute to altered signaling
+or dark recovery. Contact and RMSF differences do **not** establish the cause of
+dark recovery. Eyring activation quantities are kinetic-model-derived quantities,
+not direct evidence of structural entropy. A447 loss is an absorbance-loss
+readout under the measurement conditions, not a denaturation rate or Tm.
+
+### 3. Current limitations and next experiments
+
+Run-to-run reproducibility, convergence and equilibrium populations remain
+unverified. The fixed Cys–FMN adduct cannot sample bond cleavage; a single
+protein chain cannot establish protein–protein association. Direct MD sequence
+correspondence does not resolve original ASR provenance, including the
+WT119–124 boundary. Additional independent runs, mapping verification and
+controlled dark-recovery measurements with reciprocal substitutions are needed
+to test the hypotheses. A stability claim requires an appropriate independent
+stability assay and model rather than relabeling A447 loss.
+
+See [HMR methods and execution order](docs/hmr_analysis.md),
+[public-release scope](docs/public_release_scope.md), and
+[software versions](docs/software_environment.md).
 
 ## Repository Usage
 
