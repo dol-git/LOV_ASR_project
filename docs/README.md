@@ -12,6 +12,8 @@ experimental data or production simulation inputs.
 | Document | Role |
 |---|---|
 | [Project status](project_status.md) | Completed design work, experimental progress and remaining tasks |
+| [Nov 2026 dry-to-wet handoff](research_updates/2026-11-06-dry-to-wet-transition.md) | Public summary of current exploratory analysis, uncertainties and experimental handoff |
+| [Reciprocal-mutant study plan](wetlab_plans/2026-11-06-reciprocal-mutant-validation-plan.md) | Proposed matched-assay controls, sequence validation and prospective readouts |
 | [Construct design](../results/construct_design/README.md) | Existing boundary rationale and final construct records |
 | [HMR guide](../analysis/hmr/README.md), [HMR methods](hmr_analysis.md) | Structural-analysis entry point and definitions |
 | [gREST guide](../analysis/grest/README.md), [gREST review](grest_analysis.md) | Exploratory execution and convergence evidence |

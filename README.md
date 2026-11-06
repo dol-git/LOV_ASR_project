@@ -1,6 +1,19 @@
 # Evolutionary Design Principles of LOV-Domain Photoreceptors
 
+## November 2026 research handoff (public status)
+
+The AsLOV2 ancestral/extant comparison has moved from exploratory MD and structural interpretation toward **planned reciprocal-mutant and temperature-dependent dark-recovery validation**. This stage is a proposed experimental follow-up, not a demonstrated causal mechanism or a completed mutagenesis result.
+
+- Exploratory, short fixed-adduct trajectories identified candidate differences in core–Jα interaction patterns and local pocket conformations. Comparisons are limited by sampling and non-identical MD preparation/parameters.
+- Discrete contact/rotamer Shannon entropies describe observed structural-state diversity, **not** thermodynamic activation entropy. The proposed mechanical-strain explanation is **not established**.
+- Preliminary visual comparisons of predicted structures motivate geometry checks, but quantitative structure validation and verified order-ready sequences are pending.
+- Apparent Arrhenius/Eyring parameters remain subject to dataset, uncertainty and fitting-window review; unpublished effect sizes are withheld under [public-release scope](docs/public_release_scope.md).
+
+See the [dated research handoff](docs/research_updates/2026-11-06-dry-to-wet-transition.md) and the [reciprocal-mutant validation plan](docs/wetlab_plans/2026-11-06-reciprocal-mutant-validation-plan.md). Raw data, residue-specific effect sizes, private structures and unverified construct files remain external.
+
 ## Contents
+
+- [November 2026 research handoff (public status)](#november-2026-research-handoff-public-status)
 
 - [Project Goal](#project-goal)
 - [Scientific Motivation](#scientific-motivation)

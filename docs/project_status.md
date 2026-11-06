@@ -1,5 +1,14 @@
 # Project Status
 
+## 2026-11-06 dry-to-wet handoff
+
+The AsLOV2 ancestral/extant study is moving from exploratory structure/MD interpretation to planned **reciprocal mutant validation** and controlled, temperature-dependent dark-recovery kinetics. Static predicted-structure inspection and short-trajectory interaction/state-diversity analysis motivate the follow-up but do not establish allosteric causality, a strain mechanism, equilibrated conformational entropy or activation thermodynamics.
+
+Exact synthesis/order sequences require verification against the expression plasmids and corrected construct provenance. Mutation design, quantitative AlphaFold HB validation and mutant kinetics are **pending**, not completed. Published public status continues to withhold unpublished numerical results and residue-specific tables in accordance with [public-release scope](public_release_scope.md).
+
+See the [handoff record](research_updates/2026-11-06-dry-to-wet-transition.md) and [planned wet-lab validation](wetlab_plans/2026-11-06-reciprocal-mutant-validation-plan.md).
+
+
 Last documentation review: October 21, 2026
 
 ## HMR documentation update
