@@ -26,27 +26,18 @@ These comparisons provide descriptive observations with a protocol confound.
 Independent simulation repeats and matched-protocol comparisons remain pending.
 Time blocks and stored frames are not independent simulation replicates.
 
-### Working hypothesis and experimental validation
+### Analysis scope and experimental validation
 
-The working structural hypothesis is that sequence substitutions alter
-Jα–core packing and the distribution of interface contacts. A proposed functional
-link is that these changes affect access to configurations relevant to dark
-recovery. That connection remains to be tested.
+Experimental mutation validation is in preparation. Structural metrics and
+kinetic-model-derived activation quantities require further validation of their
+relationship. Specific mechanistic predictions and mutation designs are retained
+in internal research records.
 
 Contact occupancy, hydrogen-bond geometry and RMSF quantify structural features
 within the sampled trajectories. Their energetic contributions to activation
 enthalpy or entropy have not been quantified. The fixed light-state Cys–flavin
 adduct model does not sample the chemical recovery reaction or its transition
-state. Eyring-derived activation quantities and structural dynamics therefore
-remain distinct evidence layers. Environmental adaptation is a possible
-evolutionary interpretation requiring additional historical and functional
-evidence.
-
-The researcher confirmed that synthesis for mutation validation has been ordered,
-with a quoted lead time of 12 business days. Delivery, expression, purification
-and mutant kinetic measurements remain pending. During this interval, work
-focuses on data organization, literature reading, analysis provenance and weekly
-report preparation.
+state.
 
 The earlier sections below retain the historical project record. Numerical
 comparative results, new sequences and research figures remain external according
