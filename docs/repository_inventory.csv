@@ -1,0 +1,130 @@
+path,action,reason
+README.md,maintain,Documentation; keep stage-specific methods and concise navigation
+analysis/README.md,maintain,Documentation; keep stage-specific methods and concise navigation
+analysis/grest/Heo/analysis/grest50/analyze.py,retain,Method or execution snapshot; preserve calculations and provenance
+analysis/grest/Heo/analysis/grest50/clustering/block_population_stability/analyze.py,retain,Method or execution snapshot; preserve calculations and provenance
+analysis/grest/Heo/analysis/grest50/contact_distances/convergence_10ns_50ns/analyze_convergence.py,retain,Method or execution snapshot; preserve calculations and provenance
+analysis/grest/README.md,maintain,Documentation; keep stage-specific methods and concise navigation
+analysis/grest/code_provenance.csv,retain,Existing provenance or compact diagnostic record
+analysis/grest/exchange_diagnostics.csv,retain,Existing provenance or compact diagnostic record
+analysis/grest/external_evidence_index.csv,retain,Existing provenance or compact diagnostic record
+analysis/grest/submit_50ns.example.sh,retain,Method or execution snapshot; preserve calculations and provenance
+analysis/hmr/Ja_core_visual_fps8_20261019/README.md,maintain,Documentation; keep stage-specific methods and concise navigation
+analysis/hmr/Ja_core_visual_fps8_20261019/build_viewers.py,retain,Method or execution snapshot; preserve calculations and provenance
+analysis/hmr/Ja_core_visual_fps8_20261019/chimerax_view16.py,retain,Method or execution snapshot; preserve calculations and provenance
+analysis/hmr/Ja_core_visual_fps8_20261019/select_frames.py,retain,Method or execution snapshot; preserve calculations and provenance
+analysis/hmr/Ja_literature_review_20261019/analyze.py,retain,Method or execution snapshot; preserve calculations and provenance
+analysis/hmr/Ja_literature_review_20261019/matched_atom_control.py,retain,Method or execution snapshot; preserve calculations and provenance
+analysis/hmr/Ja_literature_review_20261019/requirements.txt,retain,Method or execution snapshot; preserve calculations and provenance
+analysis/hmr/README.md,maintain,Documentation; keep stage-specific methods and concise navigation
+analysis/hmr/chimerax/README.md,maintain,Documentation; keep stage-specific methods and concise navigation
+analysis/hmr/code_provenance.csv,retain,Existing provenance or compact diagnostic record
+constructs/README.md,maintain,Documentation; keep stage-specific methods and concise navigation
+constructs/bacterial/HK/bacterial_auto_HK.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/bacterial/HK/bacterial_einsi_HK.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/bacterial/HK/bacterial_ginsi_HK.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/bacterial/HK/bacterial_linsi_HK.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/bacterial/HK_all.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/bacterial/HTH/bacterial_auto_HTH.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/bacterial/HTH/bacterial_einsi_HTH.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/bacterial/HTH/bacterial_ginsi_HTH.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/bacterial/HTH/bacterial_linsi_HTH_Node40.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/bacterial/HTH_all.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/bacterial/STAS/bacterial_auto_STAS_Node201.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/bacterial/STAS/bacterial_einsi_STAS_Node195.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/bacterial/STAS/bacterial_ginsi_STAS_Node227.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/bacterial/STAS/bacterial_linsi_STAS_Node176.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/bacterial/STAS_all.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/bacterial_einsi_selected.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/bacterial_einsi_targets.txt,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/bacterial_linsi_named.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/bacterial_linsi_selected.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/bacterial_linsi_targets.txt,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/consensus/alignments/hth.aln,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/consensus/alignments/plant.aln,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/consensus/alignments/stas.aln,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/consensus/inputs/hth_candidates.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/consensus/inputs/plant_candidates.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/consensus/inputs/stas_candidates.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/consensus/outputs/hth_consensus.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/consensus/outputs/plant_consensus.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/consensus/outputs/stas_consensus.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/construct_design/alignments/hth_with_ref.aln,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/construct_design/alignments/plant_with_ref.aln,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/construct_design/alignments/stas_with_ref.aln,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/construct_design/inputs/AsLOV2_ref.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/construct_design/inputs/EL222_ref.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/construct_design/inputs/YtvA_ref.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/construct_design/inputs/hth_best.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/construct_design/inputs/hth_with_ref.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/construct_design/inputs/plant_best.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/construct_design/inputs/plant_with_ref.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/construct_design/inputs/stas_best.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/construct_design/inputs/stas_with_ref.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/construct_design/outputs/final_LOV_construct_candidates.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/construct_design/outputs/hth_Node83_EL222_1_144.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/construct_design/outputs/plant_Node62_AsLOV2_404_560.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/construct_design/outputs/stas_Node227_YtvA_20_147.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/construct_design/scripts/extract_by_ref_range.py,retain,Method or execution snapshot; preserve calculations and provenance
+constructs/fasta/bacterial_einsi_selected.fasta,remove,Empty placeholder; populated candidate records retained elsewhere
+constructs/fasta/bacterial_linsi_selected.fasta,remove,Empty placeholder; populated candidate records retained elsewhere
+constructs/fasta/plant_einsi_selected.fasta,remove,Empty placeholder; populated candidate records retained elsewhere
+constructs/fasta/plant_linsi_selected.fasta,remove,Empty placeholder; populated candidate records retained elsewhere
+constructs/hth_pairwise.summary.tsv,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/hth_pairwise.tsv,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/make_consensus.py,retain,Method or execution snapshot; preserve calculations and provenance
+constructs/metadata/selected_nodes.tsv,retain-review,Historical node IDs differ from final designs; source correspondence needs reconciliation
+constructs/pairwise_identity.py,retain,Method or execution snapshot; preserve calculations and provenance
+constructs/pairwise_identity_exact.py,retain,Method or execution snapshot; preserve calculations and provenance
+constructs/plant/fasta/plant_auto_Node63.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/plant/fasta/plant_einsi_Node80.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/plant/fasta/plant_ginsi_Node62.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/plant/fasta/plant_linsi_Node62.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/plant/plant_all_candidates.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/plant_einsi_selected.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/plant_einsi_targets.txt,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/plant_linsi_selected.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/plant_linsi_targets.txt,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/plant_pairwise.summary.tsv,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/plant_pairwise.tsv,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/stas_pairwise.summary.tsv,retain,"Scientific sequence, alignment, tree or comparison record"
+constructs/stas_pairwise.tsv,retain,"Scientific sequence, alignment, tree or comparison record"
+docs/README.md,maintain,Documentation; keep stage-specific methods and concise navigation
+docs/grest_analysis.md,maintain,Documentation; keep stage-specific methods and concise navigation
+docs/hmr_analysis.md,maintain,Documentation; keep stage-specific methods and concise navigation
+docs/project_status.md,maintain,Documentation; keep stage-specific methods and concise navigation
+docs/public_release_scope.md,maintain,Documentation; keep stage-specific methods and concise navigation
+docs/software_environment.md,maintain,Documentation; keep stage-specific methods and concise navigation
+results/construct_design/README.md,maintain,Documentation; keep stage-specific methods and concise navigation
+results/construct_design/final_order_fastas/all_WT_and_ancestral_order_constructs.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+results/construct_design/final_order_fastas/order_YtvA_EL222_WT_Ancestor_constructs_renamed.fasta,retain,"Scientific sequence, alignment, tree or comparison record"
+scripts/lov_architecture_classifier.py,retain,Method or execution snapshot; preserve calculations and provenance
+trees/README.md,maintain,Documentation; keep stage-specific methods and concise navigation
+trees/bacterial_auto_v2.treefile,retain,"Scientific sequence, alignment, tree or comparison record"
+trees/bacterial_einsi_v2.treefile,retain,"Scientific sequence, alignment, tree or comparison record"
+trees/bacterial_ginsi_v2.treefile,retain,"Scientific sequence, alignment, tree or comparison record"
+trees/bacterial_linsi_v2.treefile,retain,"Scientific sequence, alignment, tree or comparison record"
+trees/bacterial_only/bacterial_auto_v2.treefile,remove,Byte-identical duplicate of trees/bacterial_auto_v2.treefile
+trees/bacterial_only/bacterial_einsi_v2.treefile,remove,Byte-identical duplicate of trees/bacterial_einsi_v2.treefile
+trees/bacterial_only/bacterial_ginsi_v2.treefile,remove,Byte-identical duplicate of trees/bacterial_ginsi_v2.treefile
+trees/bacterial_only/bacterial_linsi_v2.treefile,remove,Byte-identical duplicate of trees/bacterial_linsi_v2.treefile
+trees/comparison/bacterial_topology_compare.normalized_rf.csv,retain,"Scientific sequence, alignment, tree or comparison record"
+trees/comparison/bacterial_topology_compare.pairwise.tsv,retain,"Scientific sequence, alignment, tree or comparison record"
+trees/comparison/bacterial_topology_compare.shared_fraction.csv,retain,"Scientific sequence, alignment, tree or comparison record"
+trees/comparison/bacterial_v2_topology_compare.normalized_rf.csv,retain,"Scientific sequence, alignment, tree or comparison record"
+trees/comparison/bacterial_v2_topology_compare.pairwise.tsv,retain,"Scientific sequence, alignment, tree or comparison record"
+trees/comparison/bacterial_v2_topology_compare.shared_fraction.csv,retain,"Scientific sequence, alignment, tree or comparison record"
+trees/comparison/plant_topology_compare.normalized_rf.csv,retain,"Scientific sequence, alignment, tree or comparison record"
+trees/comparison/plant_topology_compare.pairwise.tsv,retain,"Scientific sequence, alignment, tree or comparison record"
+trees/comparison/plant_topology_compare.shared_fraction.csv,retain,"Scientific sequence, alignment, tree or comparison record"
+trees/comparison/plant_v2_topology_compare.normalized_rf.csv,retain,"Scientific sequence, alignment, tree or comparison record"
+trees/comparison/plant_v2_topology_compare.pairwise.tsv,retain,"Scientific sequence, alignment, tree or comparison record"
+trees/comparison/plant_v2_topology_compare.shared_fraction.csv,retain,"Scientific sequence, alignment, tree or comparison record"
+trees/plant_auto_v2.treefile,retain,"Scientific sequence, alignment, tree or comparison record"
+trees/plant_einsi_v2.treefile,retain,"Scientific sequence, alignment, tree or comparison record"
+trees/plant_ginsi_v2.treefile,retain,"Scientific sequence, alignment, tree or comparison record"
+trees/plant_linsi_v2.treefile,retain,"Scientific sequence, alignment, tree or comparison record"
+trees/plant_only/plant_auto_v2.treefile,remove,Byte-identical duplicate of trees/plant_auto_v2.treefile
+trees/plant_only/plant_einsi_v2.treefile,remove,Byte-identical duplicate of trees/plant_einsi_v2.treefile
+trees/plant_only/plant_ginsi_v2.treefile,remove,Byte-identical duplicate of trees/plant_ginsi_v2.treefile
+trees/plant_only/plant_linsi_v2.treefile,remove,Byte-identical duplicate of trees/plant_linsi_v2.treefile

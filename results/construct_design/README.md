@@ -87,22 +87,12 @@ Working files used to generate these records:
 - `constructs/construct_design/outputs/`
 - `constructs/construct_design/scripts/extract_by_ref_range.py`
 
-## Current status
+## Status and provenance
 
-The following constructs have already been submitted for ordering:
+The AsLOV2 pair is the focus of ongoing experimental characterization. YtvA and
+EL222 entries are prepared construct designs. Current progress is maintained in
+[the project status](../../docs/project_status.md).
 
-- `WT_AsLOV2_404_560`
-- `AncPlant_Node62_AsLOV2_404_560eq`
-
-The following constructs were prepared as the next ordering candidates:
-
-- `WT_YtvA_20_147`
-- `AncSTAS_Node227_YtvA_20_147eq`
-- `WT_EL222_1_163`
-- `AncHTH_Node83_EL222_1_170eq`
-
-## Next steps
-
-1. Submit the YtvA and EL222 WT/ancestor constructs for ordering.
-2. Read papers on AsLOV2, YtvA, and EL222 signal-transmission helices/linkers.
-3. Prepare structure-prediction inputs for the final construct set.
+Intermediate extraction files in `constructs/construct_design/outputs/` document
+earlier boundary choices. Use the final FASTA set in this directory for the
+construct definitions described above.

@@ -42,4 +42,4 @@ Documentation checks cover English prose, relative links, directory layout,
 syntax and source provenance. They do not repeat historical analysis validation.
 HMR has one confirmed production run per system. gREST convergence was not
 confirmed for the evaluated length and metrics; exchanging replicas are not
-independent runs. See [interpretation limits](../README.md#current-interpretation-and-validation-plan).
+independent runs. See [interpretation limits](../docs/project_status.md#interpretation-and-evidence).

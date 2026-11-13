@@ -1,41 +1,24 @@
-# Public release scope — 2026-10-21
+# Public Content Scope
 
-GitHub repository metadata confirmed `dol-git/LOV_ASR_project` is public.
-Only methods, code snapshots without embedded sequences/results, version
-records, code checksums and a checked scope table are added in this update.
+This repository is public. Content is organized by scientific purpose and
+release status.
 
-Unpublished experimental values, contact/RMSF effect sizes, residue-specific
-result tables, selected frame indices, structures and all existing research
-figures are withheld: their public-release status could not be established.
-No new figure is generated. No existing figure was found with confirmed release
-clearance, so no scientific image is included in this commit. The README's
-existing workflow diagram remains available. A public results figure requires
-release clearance, traceable source data and an appropriate descriptive caption.
+| Category | Content | Treatment |
+|---|---|---|
+| Public methods | Research scope, workflow, analysis definitions, software versions, code and provenance | Include sufficient detail for interpretation and reproduction with documented inputs |
+| Public progress | Broad stage status and dated, confirmed simulation completion records | Keep concise and identify the source date |
+| Internal research | Unpublished comparative measurements, mutation-specific results, new sequence designs, structural figures and detailed mechanistic predictions | Retain internally until an explicit release decision |
+| Restricted operational material | Credentials, personal identifiers and private machine/account details | Exclude from public additions |
+| Unnecessary repository content | Procurement status, vendor prices, delivery estimates, personal schedules and conversational work logs | Omit |
+| External large inputs | Trajectories, restart files, topology/coordinate inputs, raw spectra and large arrays | Maintain with provenance outside this compact repository |
 
-DCD, restart/checkpoint files, raw/large arrays, PSF/PDB inputs, raw spectra,
-sequences not already tracked, personal paths from manifests, credentials and
-environment/vendor folders are not added. Existing tracked files and history
-are retained. This scoped review does not certify previously tracked sequences
-as cleared for publication.
+Existing tracked construct sequences and historical exchange diagnostics are
+retained as existing project records. Their presence does not establish release
+clearance for additional sequences or unpublished results. Release decisions
+should identify the exact material and its source.
 
-The pre-existing untracked `docs/dataset_construct_map.md` is left untouched
-and excluded from staging. No push is performed.
+Public documentation is maintained in English. Code snapshots retain their
+recorded paths and source hashes. Methodological limitations belong in the
+relevant methods guide; procurement and editing-session narratives do not.
 
-## Subsequent gREST documentation update
-
-The gREST update adds reviewed methods/code, an account-free launch example,
-execution conditions and a six-row exchange diagnostic table specifically within
-the requested sampling review. Unpublished structural effect sizes, coordinates,
-sequences, production inputs and raw reports/logs remain external. See
-[grest_analysis.md](grest_analysis.md). The no-push statement above describes the
-original local HMR documentation update, not the subsequent authorized pushes.
-
-## Documentation organization and language
-
-Public documentation and generated report prose are maintained in English;
-paths and data identifiers keep their original spelling. The block-population
-script's report strings were translated without changing numerical logic.
-Its original source SHA256 is retained alongside the current repository SHA256
-and an adaptation note in `analysis/grest/code_provenance.csv`. Other snapshots
-remain unchanged. Added directory guides document external-input requirements;
-no analysis or private result release accompanies this update.
+Removing content from the current branch leaves earlier versions in Git history.

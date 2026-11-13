@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Describe fluctuations and Jα–core geometry in the current WT/Anc HMR comparison.
+Describe fluctuations and Jα–core geometry in the historical WT/Anc HMR comparison.
 There is one confirmed production run per system: 1,000 frames over
 0.01–10.00 ns. This guide covers analysis; [frame selection](Ja_core_visual_fps8_20261019/README.md)
 and [ChimeraX display](chimerax/README.md) are separate stages.
