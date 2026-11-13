@@ -1,6 +1,58 @@
 # Project Status
 
-Last documentation review: October 21, 2026
+Last documentation review: November 13, 2026
+
+## Progress update — November 13, 2026
+
+This update records progress reported by the researcher and the supplied October
+30 analysis report. The underlying trajectories and analysis outputs were not
+independently reanalyzed for this documentation update.
+
+### MD comparison and mutant screening
+
+The analysis now distinguishes the historical WT144 model, the rebuilt WT157
+model and Anc157. Construct length, residue correspondence, starting coordinates
+and simulation protocol must be recorded for each comparison.
+
+A nine-model mutant MD set was planned. Four single-mutant systems had completed
+production and analysis as of the October 30 report, each with one 10 ns
+trajectory and 1,000 stored frames. Completion of the other five systems has not
+been verified in this update. Model identities and numerical results remain
+external under the existing public-release scope.
+
+The four reported mutant trajectories used engine HMR with a 4 fs timestep.
+Their existing WT157 reference used non-HMR dynamics with a 2.5 fs timestep.
+These comparisons provide descriptive observations with a protocol confound.
+Independent simulation repeats and matched-protocol comparisons remain pending.
+Time blocks and stored frames are not independent simulation replicates.
+
+### Working hypothesis and experimental validation
+
+The working structural hypothesis is that sequence substitutions alter
+Jα–core packing and the distribution of interface contacts. A proposed functional
+link is that these changes affect access to configurations relevant to dark
+recovery. That connection remains to be tested.
+
+Contact occupancy, hydrogen-bond geometry and RMSF quantify structural features
+within the sampled trajectories. Their energetic contributions to activation
+enthalpy or entropy have not been quantified. The fixed light-state Cys–flavin
+adduct model does not sample the chemical recovery reaction or its transition
+state. Eyring-derived activation quantities and structural dynamics therefore
+remain distinct evidence layers. Environmental adaptation is a possible
+evolutionary interpretation requiring additional historical and functional
+evidence.
+
+The researcher confirmed that synthesis for mutation validation has been ordered,
+with a quoted lead time of 12 business days. Delivery, expression, purification
+and mutant kinetic measurements remain pending. During this interval, work
+focuses on data organization, literature reading, analysis provenance and weekly
+report preparation.
+
+The earlier sections below retain the historical project record. Numerical
+comparative results, new sequences and research figures remain external according
+to [the public-release scope](public_release_scope.md).
+
+
 
 ## HMR documentation update
 
@@ -84,7 +136,7 @@ Accordingly, this repository does not currently report validated experimental
 results or conclusions about spectral properties, kinetics, stability,
 oligomeric state, or signaling activity.
 
-## Current Next Steps
+## Historical Next Steps (October 21, 2026)
 
 - continue expression, purification, and spectroscopy optimization
 - repeat measurements before comparative interpretation
