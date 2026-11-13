@@ -8,10 +8,9 @@ MD screening set have been initiated. Four models had completed single-trajector
 completion status has not been verified here. The reported mutant HMR/4 fs runs
 and existing WT157 non-HMR/2.5 fs reference differ in simulation protocol.
 
-Synthesis for mutation validation has been ordered with a quoted lead time of
-12 business days. The working hypothesis concerns altered Jα–core packing and
-its possible coupling to dark recovery. The contribution of interface changes to
-activation thermodynamics remains unquantified. See the
+Experimental mutation validation is in preparation. Structural analysis and
+kinetic-model-derived activation quantities require further validation of their
+relationship. See the
 [dated progress update](docs/project_status.md#progress-update--november-13-2026)
 for evidence boundaries and pending validation. Earlier run descriptions below
 refer to the historical WT/Anc HMR analysis. Public-release restrictions remain
